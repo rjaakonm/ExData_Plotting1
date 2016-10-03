@@ -20,7 +20,6 @@ finalData <- cbind(SetTime, finalData)
 ## Generating Plot 4, (day labels in German)
 
 png("plot4.png", width=480, height=480)
-par(bg = "transparent")
 
 par(mfcol = c(2, 2), mar = c(5, 4, 4, 2))
 plot(finalData$SetTime, finalData$Global_active_power, type="l", col="black", xlab="", ylab="Global Active Power (kilowatts)")
