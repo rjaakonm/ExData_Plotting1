@@ -19,7 +19,6 @@ finalData <- cbind(SetTime, finalData)
 
 ## Generating Plot 3, (day labels in German)
 png("plot3.png", width=480, height=480)
-par(bg = "transparent")
 
 plot(finalData$SetTime, finalData$Sub_metering_1, type="l", col="black", xlab="", ylab="Energy sub metering")
 lines(finalData$SetTime, finalData$Sub_metering_2, col="red")
